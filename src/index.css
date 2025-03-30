@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary: #EB8A90;
+  --secondary: #FFCF70;
+  --background: #FFF1D6;
+  --textColor: #2C3E50;
+
+  --primaryDark: #d6b446;
+  --secondaryDark: #62376b;
+  --backgroundDark: #223b55;
+  --textColorDark: #FFFFFF;
+
+}
+
+.dark-mode {
+    --primary: var(--primaryDark);
+    --secondary: var(--secondaryDark);
+    --background: var(--backgroundDark);
+    --textColor: var(--textColorDark);
+  }
+  
+  .dark-mode body {
+    background-color: var(--backgroundDark);
+    
+  }
